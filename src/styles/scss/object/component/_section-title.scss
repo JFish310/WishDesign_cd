@@ -1,0 +1,19 @@
+.c-section-title{
+    margin-top: 147px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    text-align: center;
+    // &--small{
+    //     @extend .c-section-title;   // .c-section-titleの継承
+    //     font-size: 2.4rem;
+    //     margin-bottom: 75px;          // フォントサイズの上書き
+    // }
+}
+
+h3{
+    line-height: 2.0;
+}
+
+dd{
+    line-height: 2.14;
+}

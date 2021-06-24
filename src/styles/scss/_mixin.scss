@@ -1,0 +1,34 @@
+/* topページと共通（加筆なし） */
+@mixin breakpoint( $point ) {
+	@if $point == tablet {
+		@media ( min-width: 641px ) {
+			@content ;
+		}
+	}
+	@if $point == pc {
+		@media ( min-width: 769px ) {
+			@content ;
+		}
+	}
+	@if $point == wide {
+		@media ( min-width: 961px ) {
+			@content ;
+		}
+	}
+}
+
+// フォント
+@mixin font-didot {
+	font-family: 'GFS Didot', serif;
+}
+
+@mixin font-yumincho {
+	font-family :YuMincho,'Yu Mincho',serif; /* mac用,Windows用,その他 */
+}
+
+// transformの中央寄せ
+@mixin transform50 {
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

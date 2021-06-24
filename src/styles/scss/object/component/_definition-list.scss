@@ -1,0 +1,46 @@
+.c-dl--level1{
+    font-size: 1.5rem;
+    margin: 0 0 0 auto; // 右寄せ
+
+    // dt{
+    //     margin-top: 20px;
+    // }
+    // dd{
+    //     margin-top: 40px;
+    // }
+    /* レスポンシブ対応 */
+    // @include breakpoint( breakpoint_large ){
+    //     margin-bottom: 0px;
+    //     dd{
+    //         margin-bottom: 0px;
+    //     }
+    // }
+}
+
+.c-dl--pro{
+    // width: 320px;
+    letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+    dt{
+        margin-top: 47px;
+    }
+    dd{
+        &:first-of-type{
+            margin-top: 25px;   // 最初のddのみ上に余白
+        }
+        line-height: 3.0rem;
+        // padding: 30px 35px;
+        // font-size: 1.3rem;
+    }
+}
+
+
+.c-dl--level2{
+    width: 320px;
+    dt{
+        height: 200px;
+    }
+    dd{
+        padding: 30px 35px;
+        font-size: 1.3rem;
+    }
+}

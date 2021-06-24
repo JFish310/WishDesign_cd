@@ -1,0 +1,18 @@
+.p-profile{
+  margin-top: 147px;
+  text-align: center;
+  .c-section-title{
+    letter-spacing: 0.5em;  // 文字間（XDの数値からの計算：数値/1000)
+  }
+  p{
+    margin-top: 50px;
+    // font-size : 1.5rem;
+    line-height: 3.5rem;    // 行の高さ
+    /* レスポンシブ対応の改行位置の調整 */
+    span{
+      display: inline-block;    // spanタグごとに改行が入る
+    }
+  }
+
+
+}

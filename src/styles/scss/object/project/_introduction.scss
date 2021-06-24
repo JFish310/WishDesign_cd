@@ -1,0 +1,23 @@
+.p-introduction{
+  margin-top: 110px;  // ヘッダーによってはちょっと要調整
+  text-align: center; // 中央寄せ
+
+  ul{
+    li{
+      letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+      line-height: 3.5rem;    // 行の高さ
+      &:first-of-type{
+        margin-top: 50px;   // 最初のliのみ上に余白
+      }
+    }
+  }
+  p{
+    margin-top: 49px;
+    line-height: 2.0rem;    // 行の高さ
+    /* レスポンシブ対応の改行位置の調整 */
+    span{
+      display: inline-block;    // spanタグごとに改行が入る
+    }
+  }
+
+}
