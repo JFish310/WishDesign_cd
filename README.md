@@ -29,3 +29,6 @@ layout-list
 
 参照URL https://jobtech.jp/html_css/4209/
 ***
+
+
+プルリク練習用記述（マージ不要です）
