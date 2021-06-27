@@ -6,7 +6,7 @@
 
 .block{}                    親要素  
 .block__element{}           blockに属する子要素  
-.block--modifier{}          親要素の条件違い  
+.block--modifier{}          修飾を追加した親要素
 .block__element--modifier{} 修飾を追加した子要素  
 
 **2つ以上の単語をつなぐときは「-（ハイフン）」でつなぐ**  
