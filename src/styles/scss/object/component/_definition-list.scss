@@ -1,20 +1,21 @@
 .c-dl--level1{
-    font-size: 1.5rem;
-    margin: 0 0 0 auto; // 右寄せ
+	// font-size: 1.5rem;
+	padding: 20px 14px;
+	border-left: solid 1px #C1C1C1;		// タイムラインのボーダー
 
-    // dt{
-    //     margin-top: 20px;
-    // }
-    // dd{
-    //     margin-top: 40px;
-    // }
-    /* レスポンシブ対応 */
-    // @include breakpoint( breakpoint_large ){
-    //     margin-bottom: 0px;
-    //     dd{
-    //         margin-bottom: 0px;
-    //     }
-    // }
+	// dt{
+	//     margin-top: 20px;
+	// }
+	// dd{
+	//     margin-top: 40px;
+	// }
+	/* レスポンシブ対応 */
+	// @include breakpoint( breakpoint_large ){
+	//     margin-bottom: 0px;
+	//     dd{
+	//         margin-bottom: 0px;
+	//     }
+	// }
 }
 
 .c-dl--pro{

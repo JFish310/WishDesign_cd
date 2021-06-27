@@ -1,10 +1,11 @@
 .p-introduction{
-  margin-top: 110px;  // ヘッダーによってはちょっと要調整
+  margin-top: 103px;  // ヘッダーによってはちょっと要調整
   text-align: center; // 中央寄せ
 
   ul{
     li{
       letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+      text-indent: 0.3em;			// ↑左に同値の余白を追加
       line-height: 3.5rem;    // 行の高さ
       &:first-of-type{
         margin-top: 50px;   // 最初のliのみ上に余白

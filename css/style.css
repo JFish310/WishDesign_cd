@@ -106,6 +106,18 @@ time {
   }
 }
 
+.c-btn--circle {
+  width: 96px;
+  /*幅*/
+  height: 96px;
+  /*高さ*/
+  border-radius: 50%;
+  /*角丸*/
+  border: solid 1px black;
+  text-align: center;
+  line-height: 96px;
+}
+
 .c-btn--menu {
   width: 14.4rem;
   height: 5rem;
@@ -140,8 +152,8 @@ time {
 }
 
 .c-dl--level1 {
-  font-size: 1.5rem;
-  margin: 0 0 0 auto;
+  padding: 20px 14px;
+  border-left: solid 1px #C1C1C1;
   /* レスポンシブ対応 */
 }
 
@@ -187,11 +199,10 @@ time {
 
 .c-layout-list__item {
   max-width: 345px;
-  margin-bottom: 50px;
 }
 
-.c-layout-list__item:last-of-type {
-  margin-bottom: 0;
+.c-layout-list__item:last-of-type .c-dl--level1 {
+  border-left: none;
 }
 
 /* News　レスポンシブ　縦並び→横並び */
@@ -233,12 +244,13 @@ dd {
 }
 
 .p-introduction {
-  margin-top: 110px;
+  margin-top: 103px;
   text-align: center;
 }
 
 .p-introduction ul li {
   letter-spacing: 0.3em;
+  text-indent: 0.3em;
   line-height: 3.5rem;
 }
 
@@ -263,6 +275,7 @@ dd {
 
 .p-profile .c-section-title {
   letter-spacing: 0.5em;
+  text-indent: 0.5em;
 }
 
 .p-profile p {
@@ -287,6 +300,10 @@ dd {
   margin-top: 48px;
 }
 
+.p-timeline .c-dl--level1 {
+  margin-left: 48px;
+}
+
 .p-copyright {
   font-family: 'Oswald', sans-serif;
 }
@@ -297,6 +314,31 @@ dd {
     display: flex;
     align-items: center;
   }
+}
+
+.p-mainvisual {
+  height: 668px;
+  padding-top: 240px;
+  background-image: url("../../../../../images/about/background__pc.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.p-mainvisual > h1 {
+  font-size: 4.0rem;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+}
+
+.p-mainvisual dl dt {
+  margin-top: 50px;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+}
+
+.p-mainvisual dl dd:first-of-type {
+  margin-top: 101px;
 }
 
 .u-disp--sp {

@@ -8,9 +8,12 @@
 
     &__item{    // .c-layout-list__item
         max-width: 345px;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+
         &:last-of-type{
-            margin-bottom: 0;
+					.c-dl--level1{
+						border-left: none;	// タイムラインの最後の子要素のボーダー
+					}
         }
 
         // /* レスポンシブ対応 */

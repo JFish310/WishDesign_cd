@@ -3,6 +3,7 @@
   text-align: center;
   .c-section-title{
     letter-spacing: 0.5em;  // 文字間（XDの数値からの計算：数値/1000)
+    text-indent: 0.5em;			// ↑左に同値の余白を追加
   }
   p{
     margin-top: 50px;
