@@ -1,22 +1,18 @@
 .p-timeline{
-  margin-top: 48px;
-  // p{
-  //   margin-top: 50px;
-  //   font-size : 1.5rem;
-  //   line-height: 2.0rem;
-  //   /* レスポンシブ対応の改行位置の調整 */
-  //   span{
-  //     display: inline-block;    // spanタグごとに改行が入る
-  //   }
-  // }
-
-
-  .c-dl--level1{
-    margin-left: 48px;    // 年月ボタンの半分まで余白(サイズ:半径）
-    // margin-top: 96px;
+  max-width: 865px;
+  margin: 48px auto 0px auto;           // 中央寄せ
+  .c-layout-list{
+    &__item{
+      .c-btn--circle {
+        background-color: $base-color;
+      }
+      .c-dl--level1{
+        margin-left: 48px;    // 年月ボタンの半分まで余白(サイズ:半径）
+        /* レスポンシブ対応 */
+        @include breakpoint( pc ){
+          margin-left: -48px;
+        }
+      }
+    }
   }
-
-
-
-
 }

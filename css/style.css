@@ -99,7 +99,7 @@ time {
   height: 5.6rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .c-btn--base {
     width: 26rem;
     height: 6.4rem;
@@ -107,13 +107,11 @@ time {
 }
 
 .c-btn--circle {
-  width: 96px;
-  /*幅*/
-  height: 96px;
-  /*高さ*/
+  position: relative;
   border-radius: 50%;
-  /*角丸*/
-  border: solid 1px black;
+  box-shadow: 12px 13px 9px -10px rgba(185, 185, 185, 0.3) inset, -10px -10px 15px -10px #ffffff inset;
+  width: 96px;
+  height: 96px;
   text-align: center;
   line-height: 96px;
 }
@@ -125,7 +123,7 @@ time {
   left: 17%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .c-btn--menu {
     width: 15.7rem;
     left: 6%;
@@ -151,14 +149,37 @@ time {
   z-index: 99;
 }
 
+/*
+.c-dl--level1
+	timelineの ul>li>dlタグに使用
+	dl内文章の重ねるか並べるかの設定
+	ボタンサークル間の線をborder-leftで設定
+		同時にpaddingも設定
+		pc版の時のmargin-topの設定に自信がない・・・・・・・・・・・・・・・・・・
+
+
+.c-dl--pro
+	profileの figure>figcaption>dlタグに使用
+	カーニングの設定、余白の設定
+
+*/
 .c-dl--level1 {
   padding: 20px 14px;
   border-left: solid 1px #C1C1C1;
   /* レスポンシブ対応 */
 }
 
+@media (min-width: 480px) {
+  .c-dl--level1 {
+    padding: 0;
+    padding-left: calc( 14px + 48px);
+    margin-top: 37.5px;
+  }
+}
+
 .c-dl--pro {
   letter-spacing: 0.3em;
+  text-indent: 0.3em;
 }
 
 .c-dl--pro dt {
@@ -173,19 +194,22 @@ time {
   margin-top: 25px;
 }
 
-.c-dl--level2 {
-  width: 320px;
-}
+/*
+.c-layout-list
+	timelineの ulタグに使用
+	p（ボタン）,dl（c-dl--level1）を重ねるか並べるかの設定
+	ボタンサークル間の線をborder-leftで設定
+		同時にpaddingも設定
+		pc版の時のmargin-topの設定に自信がない・・・・・・・・・・・・・・・・・・
 
-.c-dl--level2 dt {
-  height: 200px;
-}
+.c-layout-list__item
+	timelineの ul>liタグに使用
 
-.c-dl--level2 dd {
-  padding: 30px 35px;
-  font-size: 1.3rem;
-}
+.c-dl--pro
+	profileの figure>figcaption>dlタグに使用
+	カーニングの設定、余白の設定
 
+*/
 .c-layout-list {
   display: flex;
   /* 親要素に指定 */
@@ -198,34 +222,20 @@ time {
 }
 
 .c-layout-list__item {
-  max-width: 345px;
+  min-width: 80%;
+  /* レスポンシブ対応 */
 }
 
 .c-layout-list__item:last-of-type .c-dl--level1 {
   border-left: none;
 }
 
-/* News　レスポンシブ　縦並び→横並び */
-.c-layout-list--row {
-  display: flex;
-  /* 親要素に指定 */
-  flex-direction: column;
-  /* 積み重なるように配置する */
-  justify-content: center;
-  /* 水平方向の指定 */
-  align-items: center;
-  /* 垂直方向の指定 */
-  /* レスポンシブ対応 */
-}
-
-.c-layout-list--row__item {
-  max-width: 345px;
-  margin-bottom: 50px;
-  /* 横並び */
-}
-
-.c-layout-list--row__item:last-of-type {
-  margin-bottom: 0;
+@media (min-width: 480px) {
+  .c-layout-list__item {
+    display: flex;
+    flex-direction: row;
+    /* 横並び */
+  }
 }
 
 .c-section-title {
@@ -297,11 +307,23 @@ dd {
 }
 
 .p-timeline {
-  margin-top: 48px;
+  max-width: 865px;
+  margin: 48px auto 0px auto;
 }
 
-.p-timeline .c-dl--level1 {
+.p-timeline .c-layout-list__item .c-btn--circle {
+  background-color: #F4F4F4;
+}
+
+.p-timeline .c-layout-list__item .c-dl--level1 {
   margin-left: 48px;
+  /* レスポンシブ対応 */
+}
+
+@media (min-width: 480px) {
+  .p-timeline .c-layout-list__item .c-dl--level1 {
+    margin-left: -48px;
+  }
 }
 
 .p-copyright {
@@ -351,7 +373,7 @@ dd {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .u-disp--sp {
     display: none;
   }
@@ -373,7 +395,7 @@ dd {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .u-disp--tablet {
     display: none;
   }
@@ -395,7 +417,7 @@ dd {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .u-disp--pc {
     display: block;
   }
@@ -417,7 +439,7 @@ dd {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .u-disp--wide {
     display: none;
   }
@@ -439,7 +461,7 @@ dd {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 480px) {
   .u-disp--full {
     display: none;
   }

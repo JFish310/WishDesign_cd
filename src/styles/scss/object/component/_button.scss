@@ -32,13 +32,23 @@
   
 
 	.c-btn--circle {
-		width: 96px;/*幅*/
-		height: 96px;/*高さ*/
-		border-radius: 50%;/*角丸*/
-		border: solid 1px black;
+		position: relative;
+		border-radius: 50%;
+		box-shadow: 12px 13px 9px -10px rgba(185, 185, 185, 0.3) inset, -10px -10px 15px -10px #ffffff inset;
+		width: 96px;
+		height: 96px;
+		
 		text-align: center;
-  	line-height: 96px;
+		line-height: 96px;
+		// margin: auto;
 	}
+	// 	width: 96px;/*幅*/
+	// 	height: 96px;/*高さ*/
+	// 	border-radius: 50%;/*角丸*/
+	// 	border: solid 1px black;
+	// 	text-align: center;
+  // 	line-height: 96px;
+	// }
 
 
 

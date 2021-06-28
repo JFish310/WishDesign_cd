@@ -8,7 +8,7 @@
       text-indent: 0.3em;			// ↑左に同値の余白を追加
       line-height: 3.5rem;    // 行の高さ
       &:first-of-type{
-        margin-top: 50px;   // 最初のliのみ上に余白
+        margin-top: 50px;     // 最初のliのみ上に余白
       }
     }
   }
@@ -20,5 +20,4 @@
       display: inline-block;    // spanタグごとに改行が入る
     }
   }
-
 }

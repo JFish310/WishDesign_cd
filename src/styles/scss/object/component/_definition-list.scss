@@ -1,26 +1,33 @@
+/*
+.c-dl--level1
+	timelineの ul>li>dlタグに使用
+	dl内文章の重ねるか並べるかの設定
+	ボタンサークル間の線をborder-leftで設定
+		同時にpaddingも設定
+		pc版の時のmargin-topの設定に自信がない・・・・・・・・・・・・・・・・・・
+
+
+.c-dl--pro
+	profileの figure>figcaption>dlタグに使用
+	カーニングの設定、余白の設定
+
+*/
 .c-dl--level1{
 	// font-size: 1.5rem;
 	padding: 20px 14px;
 	border-left: solid 1px #C1C1C1;		// タイムラインのボーダー
-
-	// dt{
-	//     margin-top: 20px;
-	// }
-	// dd{
-	//     margin-top: 40px;
-	// }
 	/* レスポンシブ対応 */
-	// @include breakpoint( breakpoint_large ){
-	//     margin-bottom: 0px;
-	//     dd{
-	//         margin-bottom: 0px;
-	//     }
-	// }
+	@include breakpoint( pc ){
+		padding: 0;
+		padding-left: calc( 14px + 48px );
+		margin-top: 37.5px;				// calc( 48px - 7.5px);		// 余白が合わないため、見た目でそろえています
+	}
 }
 
 .c-dl--pro{
     // width: 320px;
     letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+		text-indent: 0.3em;			// ↑左に同値の余白を追加
     dt{
         margin-top: 47px;
     }
@@ -31,17 +38,5 @@
         line-height: 3.0rem;
         // padding: 30px 35px;
         // font-size: 1.3rem;
-    }
-}
-
-
-.c-dl--level2{
-    width: 320px;
-    dt{
-        height: 200px;
-    }
-    dd{
-        padding: 30px 35px;
-        font-size: 1.3rem;
     }
 }
