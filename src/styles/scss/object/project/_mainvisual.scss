@@ -89,22 +89,32 @@
 	background-position: center;
   background-repeat: no-repeat;
 	text-align: center; // 中央寄せ
-	> h1{
-		font-size: 4.0rem;
-		letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
-		text-indent: 0.1em;			// ↑左に同値の余白を追加
-	}
-
-	dl{
-		dt{
+	&__title{
+		h1{
+			font-size: 4.0rem;
+			letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
+			text-indent: 0.1em;			// ↑左に同値の余白を追加
+		}
+		p{
 			margin-top: 50px;				// h1との余白
 			letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
 			text-indent: 0.1em;			// ↑左に同値の余白を追加
 		}
-		dd{
-			&:first-of-type{
-        margin-top: 101px;		// 最初のliのみ上に余白
-      }
-		}
 	}
+
+	p{
+		margin-top: 101px;				// p-mainvisual__titleとの余白
+	}
+	// dl{
+	// 	dt{
+	// 		//margin-top: 50px;				// h1との余白
+	// 		letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
+	// 		text-indent: 0.1em;			// ↑左に同値の余白を追加
+	// 	}
+	// 	dd{
+	// 		&:first-of-type{
+  //       margin-top: 101px;		// 最初のliのみ上に余白
+  //     }
+	// 	}
+	// }
 }

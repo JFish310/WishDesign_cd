@@ -16,6 +16,8 @@
 	// font-size: 1.5rem;
 	padding: 20px 14px;
 	border-left: solid 1px #C1C1C1;		// タイムラインのボーダー
+	letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+  text-indent: 0.3em;			// ↑左に同値の余白を追加
 	/* レスポンシブ対応 */
 	@include breakpoint( pc ){
 		padding: 0;
@@ -25,18 +27,30 @@
 }
 
 .c-dl--pro{
-    // width: 320px;
-    letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
-		text-indent: 0.3em;			// ↑左に同値の余白を追加
-    dt{
-        margin-top: 47px;
-    }
-    dd{
-        &:first-of-type{
-            margin-top: 25px;   // 最初のddのみ上に余白
-        }
-        line-height: 3.0rem;
-        // padding: 30px 35px;
-        // font-size: 1.3rem;
-    }
+	// width: 320px;
+	letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+	text-indent: 0.3em;			// ↑左に同値の余白を追加
+	/* レスポンシブ対応 */
+	@include breakpoint( pc ){
+		padding-left: 75px;
+		// display: flex;
+		
+		// align-items: flex-end;      /* 垂直方向の指定 */
+		// justify-content: center;    /* 水平方向の指定 */
+		// flex-direction: row;				/* 積み重なるように配置する */
+	}
+	dt{
+			margin-top: 47px;
+	}
+	dd{
+			&:first-of-type{
+					margin-top: 25px;   // 最初のddのみ上に余白
+			}
+			line-height: 3.0rem;
+			// padding: 30px 35px;
+			// font-size: 1.3rem;
+	}
+	/* レスポンシブ対応 */
+	@include breakpoint( pc ){
+	}
 }

@@ -22,6 +22,9 @@
 	justify-content: center;    /* 水平方向の指定 */
 	align-items: center;        /* 垂直方向の指定 */
 
+	/* ボタン内年号のカーニング */
+	letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
+	text-indent: 0.1em;			// ↑左に同値の余白を追加
 	&__item{    // .c-layout-list__item
 		min-width: 80%;
 		// margin-bottom: 50px;

@@ -24,22 +24,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 	<!-- jQueryの読み込み -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="home">
-	<header class="l-header u-display-between">
-		<span><a href="index.html" class="c-ttl--site">Wish Design</a></span>
-		<button class="c-btn--menu js-btn-menu">Menu</button>
-	</header>
+	<!-- <header class="l-header u-display-between">
+		<span id="js-ttl"><a href="index.html" class="c-ttl--site sp-none">Wish Design</a></span> -->
+		<!--<button class="p-btn--menu js-btn-menu u-grid"><p>Menu</p><span>サイドバーを開く</span></button> --><!-- spanの文字はリーダブルのため -->
+	<!-- </header> -->
 	<main class="p-main">
 		<article id="top" class="p-mainvisual">
-			<h1>About</h1>
-			<dl>
-				<dt>大切にしていること</dt>
-				<dd>WishDesignでは「傾聴」を大切にしています。</dd>
-				<dd>あなたの事業、理念、どうなりたいのか<br>それらを深くヒアリングしてデザインでサポートします。</dd>
-			</dl>
+			<div class="p-mainvisual__title">
+				<!-- <h1 class="c-section-title">About</h1> -->
+				<h1 class="c-section-title">About</h1>
+				<p>大切にしていること</p>
+			</div>
+			<p>WishDesignでは「傾聴」を大切にしています。<br>
+				あなたの事業、理念、どうなりたいのか<br>
+				それらを深くヒアリングしてデザインでサポートします。
+			</p>
 		</article><!-- </p-mainvisual> -->
 		<section class="p-introduction">
 			<ul><h2 class="c-section-title"><span>Wish Designの</span><span>できること</span></h2>
@@ -201,6 +204,7 @@
 				<ul class="c-layout-list">
 					<li class="c-layout-list__item">
 						<p class="c-btn--circle">2020/03</p>
+						<div class="scrolldown1"><span>Scroll</span></div>
 						<dl class="c-dl--level1">
 							<dt>2020年3月</dt>
 							<dd>それまでフリーランスの美容師、出張カメラマン、ヘアメイクとして活動。</dd>
@@ -280,11 +284,13 @@
 					</li>
 				</ul>
 			<!-- </dl> -->
-			<button class="c-btn--base">お取引の流れへ</button>
+			<button class="p-btn--base u-grid u-margin--11">
+				<p>お取引の流れへ</p><span>リンクページへ移動</span>
+			</button>
 		</section><!-- </p-timeline> -->
 
 		<!-- :::::::::追従ボタン::::::::: -->
-		<button class="c-btn--fixed">Top</button>
+		<!-- <button class="c-btn--fixed">Top</button> -->
 
 		<!-- <button class="c-btn--base">お取引の流れへ</button> -->
 	</main>
@@ -293,6 +299,35 @@
 			<small>&copy;2020 Wish Design</small>
 		</p>
 	</footer>
-	<!-- <script src="/js/hamburger.js"></script> -->
+	<!-- ◇----------------------------------------------------------------------------------------------◇ -->
+	<!-- サイドメニューが表示されたときの背景画面 -->
+	<!-- <div class="c-box--overlay"></div> -->
+
+	<!-- サイドメニュー -->
+	<!-- <aside class="l-sidebar"> -->
+
+		<!-- ナビゲーション -->
+		<!-- <nav class="l-sidebar__nav"> -->
+			<!-- 閉じるボタン -->
+			<!-- <button class="p-btn--menu--close js-btn-close">
+				<div class="p-btn--menu--close__inner u-grid">インナーにしないとサイドバーが崩れるため -->
+					<!-- <p>Close</p><span>ボタン</span>
+				</div>
+			</button> -->
+			<!-- メニュー -->
+			<!-- <ul class="c-gmenu u-wrap--align">
+				<li><a href="#">Top</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Works</a></li>
+				<li><a href="#">Flow</a></li>
+				<li><a href="#">Price</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Media</a></li>
+			</ul>
+		</nav>
+	</aside> -->
+
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -14,11 +14,18 @@
 // }
 .p-card{
 	&--profile{
-		// display: flex;              /* 親要素に指定 */
-		// flex-direction: column;     /* 積み重なるように配置する */
-		// justify-content: center;    /* 水平方向の指定 */
-		// align-items: center;        /* 垂直方向の指定 */
-		margin-top: 84px;
+	// display: flex;              /* 親要素に指定 */
+	// flex-direction: column;     /* 積み重なるように配置する */
+	// justify-content: center;    /* 水平方向の指定 */
+	// align-items: center;        /* 垂直方向の指定 */
+	margin-top: 84px;
+	&__caption{
+		/* レスポンシブ対応 */
+		@include breakpoint( pc ){
+			display: flex;
+			flex-direction: row;     /* 横並び */
+		}
+	}
 		
 
 }

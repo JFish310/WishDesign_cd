@@ -20,8 +20,8 @@ body {
 		overflow-x: inherit;
 	}
 	@include font-yumincho;
-  color: $font-color;
-  background: $base-color;
+  color: $main-color;
+	background: $base-color;
 }
 
 img {
