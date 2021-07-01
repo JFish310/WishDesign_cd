@@ -1,15 +1,16 @@
 .p-profile{
+  margin: auto;
   margin-top: 147px;
   text-align: center;
 	/* レスポンシブ対応 */
 	@include breakpoint( pc ){
-    text-align: left;
+    // text-align: left;
     
 	}
   
 	// justify-content: center;    /* 水平方向の指定 */
 	// align-items: center;        /* 垂直方向の指定 */
-  // margin: 147px auto;
+  
   .c-section-title{
     letter-spacing: 0.5em;  // 文字間（XDの数値からの計算：数値/1000)
     text-indent: 0.5em;			// ↑左に同値の余白を追加
@@ -23,12 +24,12 @@
       display: inline-block;    // spanタグごとに改行が入る
     }
   }
-  .p-card--profile{
-    &__caption{
+  // .p-card--profile{
+  //   &__caption{
 
 
-    }
-  }
+  //   }
+  // }
 
 
 }

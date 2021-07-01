@@ -32,12 +32,7 @@
 	text-indent: 0.3em;			// ↑左に同値の余白を追加
 	/* レスポンシブ対応 */
 	@include breakpoint( pc ){
-		padding-left: 75px;
-		// display: flex;
-		
-		// align-items: flex-end;      /* 垂直方向の指定 */
-		// justify-content: center;    /* 水平方向の指定 */
-		// flex-direction: row;				/* 積み重なるように配置する */
+		padding-left: 75px;		// 写真と文字との余白
 	}
 	dt{
 			margin-top: 47px;

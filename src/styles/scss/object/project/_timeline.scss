@@ -3,6 +3,7 @@
   margin: 48px auto 0px auto;           // 中央寄せ
   .c-layout-list{
     &__item{
+      // opacity: 0; // liのフィードインのため
       .c-btn--circle {
         background-color: $base-color;
       }
@@ -13,6 +14,19 @@
           margin-left: -48px;
         }
       }
+      // &.show{  // liのフィードインのため
+      //   transition-duration: 0.5s;
+      //   opacity: 1;
+      // }
     }
+    .c-layout-list__item.show{  // liのフィードインのため
+      transition-duration: 0.5s;
+      opacity: 1;
+    }
+    
   }
+  // .c-layout-list.show{  // liのフィードインのため
+  //   transition-duration: 0.5s;
+  //   opacity: 1;
+  // }
 }
