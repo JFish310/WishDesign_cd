@@ -1,5 +1,6 @@
 .p-profile{
-  margin: auto;
+  width: 80%;
+  margin: auto;         // 中央寄せ
   margin-top: 147px;
   text-align: center;
 	/* レスポンシブ対応 */
@@ -13,23 +14,33 @@
   
   .c-section-title{
     letter-spacing: 0.5em;  // 文字間（XDの数値からの計算：数値/1000)
-    text-indent: 0.5em;			// ↑左に同値の余白を追加
+    text-indent: 0.5em;			// ↑左に同値の余白を追加/* レスポンシブ対応 */
+    @include breakpoint( pc ){
+      letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+      text-indent: 0.3em;			// ↑左に同値の余白を追加
+    }
   }
   p{
-    margin-top: 50px;
-    // font-size : 1.5rem;
-    line-height: 3.5rem;    // 行の高さ
+    margin-top: 51px;
+    line-height: 2.0rem;    // 行の高さ
+    @include breakpoint( pc ){
+      margin-top: 63px;
+      line-height: 3.5rem;    // 行の高さ
+      letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+      text-indent: 0.3em;			// ↑左に同値の余白を追加
+    }
     /* レスポンシブ対応の改行位置の調整 */
     span{
       display: inline-block;    // spanタグごとに改行が入る
     }
   }
-  // .p-card--profile{
-  //   &__caption{
-
-
-  //   }
-  // }
-
-
+  .p-card--profile{
+		margin-top: 84px;
+    &__caption{
+      /* レスポンシブ対応 */
+      @include breakpoint( pc ){
+        text-align: left;					/* dlタグ内左揃え */
+      }
+    }
+  }
 }

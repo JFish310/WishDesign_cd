@@ -1,8 +1,20 @@
 .p-introduction{
-  margin-top: 103px;  // ヘッダーによってはちょっと要調整
-  text-align: center; // 中央寄せ
-
+  width: 80%;
+  margin: auto;         // 中央寄せ
+  margin-top: 103px;    // ヘッダーによってはちょっと要調整
+  text-align: center;   // 中央寄せ
+  /* レスポンシブ対応の改行位置の調整 */
+  span{
+    display: inline-block;    // spanタグごとに改行が入る
+  }
   ul{
+    .c-section-title{
+      /* レスポンシブ対応 */
+      @include breakpoint( pc ){
+        letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+        text-indent: 0.3em;			// ↑左に同値の余白を追加
+      }
+    }
     li{
       letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
       text-indent: 0.3em;			// ↑左に同値の余白を追加
@@ -14,10 +26,11 @@
   }
   p{
     margin-top: 49px;
-    line-height: 2.0rem;    // 行の高さ
-    /* レスポンシブ対応の改行位置の調整 */
-    span{
-      display: inline-block;    // spanタグごとに改行が入る
+    line-height: 2.0rem;    // 行の高さ 
+    /* レスポンシブ対応 */
+    @include breakpoint( pc ){
+      letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
+      text-indent: 0.3em;			// ↑左に同値の余白を追加
     }
   }
 }

@@ -14,9 +14,9 @@
 // ==========================================================================
 // Layout
 // ==========================================================================
-@import "layout/header";
+// @import "layout/header";
 @import "layout/footer";
-@import "layout/sidebar";
+// @import "layout/sidebar";
 // @import "layout/main";
 
 // ==========================================================================
@@ -26,37 +26,38 @@
 // Component
 // -----------------------------------------------------------------
 @import "object/component/_button";
-@import "object/component/_border";
+// @import "object/component/_border";
 @import "object/component/_definition-list";
 @import "object/component/_layout-list";
 @import "object/component/_section-title";
 // @import "object/component/grid";
 
-@import "object/component/grid";
-@import "object/component/ttl";
-@import "object/component/txt";
-@import "object/component/box";
-@import "object/component/gmenu";
+// @import "object/component/grid";
+// @import "object/component/ttl";
+// @import "object/component/txt";
+// @import "object/component/box";
+// @import "object/component/gmenu";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "object/project/btn--base";
-@import "object/project/btn--fixed";
-@import "object/project/btn--menu";
+// @import "object/project/btn--base";
+// @import "object/project/btn--fixed";
+// @import "object/project/btn--menu";
+// @import "object/project/main";
 @import "object/project/introduction";
 @import "object/project/profile";
 @import "object/project/card";
 @import "object/project/timeline";
-@import "object/project/copyright";
-@import "object/project/gmenu";
-@import "object/project/hamburger";
+// @import "object/project/copyright";
+// @import "object/project/gmenu";
+// @import "object/project/hamburger";
 @import "object/project/mainvisual";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-@import "object/utility/display";
+// @import "object/utility/display";
 // @import "object/utility/grid";
-@import "object/utility/margin";
+// @import "object/utility/margin";
 // @import "object/utility/sp-none";

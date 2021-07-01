@@ -27,7 +27,6 @@
 }
 
 .c-dl--pro{
-	// width: 320px;
 	letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
 	text-indent: 0.3em;			// ↑左に同値の余白を追加
 	/* レスポンシブ対応 */
@@ -38,14 +37,9 @@
 			margin-top: 47px;
 	}
 	dd{
-			&:first-of-type{
-					margin-top: 25px;   // 最初のddのみ上に余白
-			}
-			line-height: 3.0rem;
-			// padding: 30px 35px;
-			// font-size: 1.3rem;
-	}
-	/* レスポンシブ対応 */
-	@include breakpoint( pc ){
+		&:first-of-type{
+				margin-top: 25px;   // 最初のddのみ上に余白
+		}
+		line-height: 3.5rem;
 	}
 }

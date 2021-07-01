@@ -1,9 +1,16 @@
 .p-timeline{
-  // max-width: 865px;
-  margin: 48px auto 0px auto;           // 中央寄せ
+  width: 80%;
+  margin: auto;         // 中央寄せ
+  margin-top: 48px;
+  /* レスポンシブ対応 */
+  @include breakpoint( pc ){
+    margin-top: 120px;
+  }
   .c-layout-list{
+    max-width: 809px;
+    margin: auto;         // 中央寄せ
+    text-align: left;
     &__item{
-      // opacity: 0; // liのフィードインのため
       .c-btn--circle {
         background-color: $base-color;
       }
@@ -14,19 +21,6 @@
           margin-left: -48px;
         }
       }
-      // &.show{  // liのフィードインのため
-      //   transition-duration: 0.5s;
-      //   opacity: 1;
-      // }
-    }
-    .c-layout-list__item.show{  // liのフィードインのため
-      transition-duration: 0.5s;
-      opacity: 1;
-    }
-    
+    }    
   }
-  // .c-layout-list.show{  // liのフィードインのため
-  //   transition-duration: 0.5s;
-  //   opacity: 1;
-  // }
 }
