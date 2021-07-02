@@ -99,7 +99,6 @@ time {
 		同時にpaddingも設定
 		pc版の時のmargin-topの設定に自信がない・・・・・・・・・・・・・・・・・・
 
-
 .c-dl--pro
 	profileの figure>figcaption>dlタグに使用
 	カーニングの設定、余白の設定
@@ -150,8 +149,6 @@ time {
 	timelineの ulタグに使用
 	p（ボタン）,dl（c-dl--level1）を重ねるか並べるかの設定
 	ボタンサークル間の線をborder-leftで設定
-		同時にpaddingも設定
-		pc版の時のmargin-topの設定に自信がない・・・・・・・・・・・・・・・・・・
 
 .c-layout-list__item
 	timelineの ul>liタグに使用
@@ -159,7 +156,6 @@ time {
 .c-dl--pro
 	profileの figure>figcaption>dlタグに使用
 	カーニングの設定、余白の設定
-
 */
 .c-layout-list {
   display: flex;
@@ -196,6 +192,80 @@ time {
   font-size: 3.0rem;
   font-weight: bold;
   line-height: 4.0rem;
+}
+
+.p-mainvisual {
+  height: 668px;
+  padding-top: 240px;
+  /* レスポンシブ対応 */
+  background-image: url("../../../../../images/about/background__pc.svg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  /* レスポンシブ対応 */
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .p-mainvisual {
+    height: 800px;
+    padding-top: 252px;
+  }
+}
+
+@media (min-width: 480px) {
+  .p-mainvisual {
+    background-size: auto;
+  }
+}
+
+.p-mainvisual__title {
+  width: 80%;
+  margin: auto;
+}
+
+.p-mainvisual__title h1 {
+  font-size: 4.0rem;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  /* レスポンシブ対応 */
+}
+
+@media (min-width: 480px) {
+  .p-mainvisual__title h1 {
+    font-size: 7.0rem;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+  }
+}
+
+.p-mainvisual__title p {
+  margin-top: 50px;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  /* レスポンシブ対応 */
+}
+
+@media (min-width: 480px) {
+  .p-mainvisual__title p {
+    margin-top: 50px;
+    letter-spacing: 0.3em;
+    text-indent: 0.3em;
+  }
+}
+
+.p-mainvisual > p {
+  width: 80%;
+  margin: auto;
+  margin-top: 107px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+}
+
+@media (min-width: 480px) {
+  .p-mainvisual > p {
+    margin-top: 65px;
+  }
 }
 
 .p-introduction {
@@ -249,12 +319,12 @@ time {
   margin: auto;
   margin-top: 147px;
   text-align: center;
-  /* レスポンシブ対応 */
 }
 
 .p-profile .c-section-title {
   letter-spacing: 0.5em;
   text-indent: 0.5em;
+  /* レスポンシブ対応 */
 }
 
 @media (min-width: 480px) {
@@ -304,10 +374,8 @@ p-card--profile
 	写真と自己紹介部分
 
 p-card--profile__caption
+	p-profileのfigcaptionに使用
 	写真と文字の自己紹介部分
-
-
-
 
 */
 .p-card--profile__caption {
@@ -362,72 +430,6 @@ p-card--profile__caption
 @media (min-width: 480px) {
   .p-timeline .c-layout-list__item .c-dl--level1 {
     margin-left: -48px;
-  }
-}
-
-.p-mainvisual {
-  height: 668px;
-  padding-top: 240px;
-  /* レスポンシブ対応 */
-  background-image: url("../../../../../images/about/background__pc.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-@media (min-width: 480px) {
-  .p-mainvisual {
-    height: 800px;
-    padding-top: 252px;
-  }
-}
-
-.p-mainvisual__title {
-  width: 80%;
-  margin: auto;
-}
-
-.p-mainvisual__title h1 {
-  font-size: 4.0rem;
-  letter-spacing: 0.1em;
-  text-indent: 0.1em;
-  /* レスポンシブ対応 */
-}
-
-@media (min-width: 480px) {
-  .p-mainvisual__title h1 {
-    font-size: 7.0rem;
-    letter-spacing: 0.5em;
-    text-indent: 0.5em;
-  }
-}
-
-.p-mainvisual__title p {
-  margin-top: 50px;
-  letter-spacing: 0.1em;
-  text-indent: 0.1em;
-  /* レスポンシブ対応 */
-}
-
-@media (min-width: 480px) {
-  .p-mainvisual__title p {
-    margin-top: 50px;
-    letter-spacing: 0.3em;
-    text-indent: 0.3em;
-  }
-}
-
-.p-mainvisual > p {
-  width: 80%;
-  margin: auto;
-  margin-top: 107px;
-  letter-spacing: 0.3em;
-  text-indent: 0.3em;
-}
-
-@media (min-width: 480px) {
-  .p-mainvisual > p {
-    margin-top: 65px;
   }
 }
 /*# sourceMappingURL=style.css.map */

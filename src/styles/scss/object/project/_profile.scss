@@ -3,18 +3,10 @@
   margin: auto;         // 中央寄せ
   margin-top: 147px;
   text-align: center;
-	/* レスポンシブ対応 */
-	@include breakpoint( pc ){
-    // text-align: left;
-    
-	}
-  
-	// justify-content: center;    /* 水平方向の指定 */
-	// align-items: center;        /* 垂直方向の指定 */
-  
   .c-section-title{
-    letter-spacing: 0.5em;  // 文字間（XDの数値からの計算：数値/1000)
-    text-indent: 0.5em;			// ↑左に同値の余白を追加/* レスポンシブ対応 */
+    letter-spacing: 0.5em;    // 文字間（XDの数値からの計算：数値/1000)
+    text-indent: 0.5em;			  // ↑左に同値の余白を追加
+    /* レスポンシブ対応 */
     @include breakpoint( pc ){
       letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
       text-indent: 0.3em;			// ↑左に同値の余白を追加
@@ -22,7 +14,7 @@
   }
   p{
     margin-top: 51px;
-    line-height: 2.0rem;    // 行の高さ
+    line-height: 2.0rem;      // 行の高さ
     @include breakpoint( pc ){
       margin-top: 63px;
       line-height: 3.5rem;    // 行の高さ

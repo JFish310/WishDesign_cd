@@ -7,16 +7,21 @@
 		padding-top: 252px;
 	}
 	background-image: url("../../../../../images/about/background__pc.svg");
-	background-position: center;
+	background-position: center 0;		// 垂直方向のみ上揃え
   background-repeat: no-repeat;
-	text-align: center; // 中央寄せ
+	background-size: auto 75%;				// 垂直方向のみ倍率で画像の大きさの調整
+	/* レスポンシブ対応 */
+	@include breakpoint( pc ){
+		background-size: auto;					// 画像の大きさの初期化
+	}
+	text-align: center; 					// 中央寄せ
 	&__title{
 		width: 80%;
-		margin: auto;							// 中央寄せ
+		margin: auto;								// 中央寄せ
 		h1{
 			font-size: 4.0rem;
-			letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
-			text-indent: 0.1em;			// ↑左に同値の余白を追加
+			letter-spacing: 0.1em;  	// 文字間（XDの数値からの計算：数値/1000)
+			text-indent: 0.1em;				// ↑左に同値の余白を追加
 			/* レスポンシブ対応 */
 			@include breakpoint( pc ){
 				font-size: 7.0rem;
@@ -25,9 +30,9 @@
 			}
 		}
 		p{
-			margin-top: 50px;				// h1との余白
-			letter-spacing: 0.1em;  // 文字間（XDの数値からの計算：数値/1000)
-			text-indent: 0.1em;			// ↑左に同値の余白を追加
+			margin-top: 50px;					// h1との余白
+			letter-spacing: 0.1em;  	// 文字間（XDの数値からの計算：数値/1000)
+			text-indent: 0.1em;				// ↑左に同値の余白を追加
 			/* レスポンシブ対応 */
 			@include breakpoint( pc ){
 				margin-top: 50px;				// h1との余白
@@ -38,12 +43,12 @@
 	}
 	> p{
 		width: 80%;
-		margin: auto;						// 中央寄せ
-		margin-top: 107px;			// p-mainvisual__titleとの余白/* レスポンシブ対応 */
-		letter-spacing: 0.3em;  // 文字間（XDの数値からの計算：数値/1000)
-		text-indent: 0.3em;			// ↑左に同値の余白を追加
+		margin: auto;								// 中央寄せ
+		margin-top: 107px;					// p-mainvisual__titleとの余白/* レスポンシブ対応 */
+		letter-spacing: 0.3em;  		// 文字間（XDの数値からの計算：数値/1000)
+		text-indent: 0.3em;					// ↑左に同値の余白を追加
 		@include breakpoint( pc ){
-			margin-top: 65px;				// h1との余白
+			margin-top: 65px;					// h1との余白
 		}
 	}
 }
